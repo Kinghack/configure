@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/Users/james/ns-allinone-2.35/tcl8.5.10/macosx'
+let g:netrw_dirhist_2='/Users/james/ns-allinone-2.35/zlib-1.2.3'
+let g:netrw_dirhist_3='/Users/james/project/ptour/tour/models'
+let g:netrw_dirhist_4='/Users/james/project/ptour/tour'
+let g:netrw_dirhist_5='/Users/james/.vim/ftplugin/python/pyflakes/pyflakes'
+let g:netrw_dirhist_6='/Users/james/.vim/ftplugin/python/pyflakes'
+let g:netrw_dirhist_7='/Applications/MacVim.app'
+let g:netrw_dirhist_8='/Users/james/project/ptour'
+let g:netrw_dirhist_9='/Users/james/.vim'
