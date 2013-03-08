@@ -124,7 +124,7 @@ alias ssh='ssh -A'
 alias gs='git status'
 alias gpull='git pull'
 alias gpush='git push'
-alias ga='git add'
+alias ga='git add -u'
 alias gc='git commit'
 #alias top='top $TOP_OPTIONS'
 
