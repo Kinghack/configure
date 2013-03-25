@@ -103,6 +103,7 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
+alias dstat='dstat -cdlmnpsy'
 # some more ls aliases
 #alias ll='ls -alF'
 #alias la='ls -A'
