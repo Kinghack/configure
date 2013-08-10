@@ -11,9 +11,6 @@ alias c='clear'
 
 alias wget='wget --no-check-certificate'
 
-alias haojing='ssh zhuqiuxuan@192.168.2.2'
-alias chaoge='ssh zhuqiuxuan@192.168.1.40'
-alias online='ssh deploy@bj-web01'
 alias ..='cd ..'
 
 function cl(){ cd "$@" && ls; }
