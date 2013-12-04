@@ -7,6 +7,13 @@ ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="agnoster"
 
+alias haojing='ssh zhuqiuxuan@192.168.2.2'
+alias chaoge='ssh zhuqiuxuan@192.168.1.40'
+alias onlinechaoge='ssh deploy@10.61.12.10'
+alias onlinehaojing='ssh deploy@10.61.12.21'
+alias myserver='ssh root@192.241.245.12'
+alias mtr='/usr/local/sbin/mtr'
+
 alias c='clear'
 
 alias wget='wget --no-check-certificate'
@@ -27,6 +34,36 @@ else
 echo `ipconfig getifaddr en0`
 fi;
 }
+
+# Extract based upon file ext
+function jy() {
+if [ -f $1 ] ; then
+case $1 in
+*.tar.bz2)   tar xvjf $1        ;;
+*.tar.gz)    tar xvzf $1     ;;
+*.bz2)       bunzip2 $1       ;;
+*.rar)       unrar x $1     ;;
+*.gz)        gunzip $1     ;;
+*.tar)       tar xvf $1        ;;
+*.tbz2)      tar xvjf $1      ;;
+*.tgz)       tar xvzf $1       ;;
+*.zip)       unzip $1     ;;
+*.Z)         uncompress $1  ;;
+*.7z)        7z x $1    ;;
+*)           echo "'$1' cannot be extracted via >extract<" ;;
+esac
+else
+echo "'$1' is not a valid file"
+fi
+}
+
+
+
+# Compress with tar + bzip2
+function ys () {
+tar cvpjf $1.tar.bz2 $1
+}
+
 
 
 
